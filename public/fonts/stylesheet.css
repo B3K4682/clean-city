@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'FiraGO Regular';
+    src: url('FiraGO-Regular.eot');
+    src: local('FiraGO Regular'), local('FiraGO-Regular'),
+        url('FiraGO-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FiraGO-Regular.woff2') format('woff2'),
+        url('FiraGO-Regular.woff') format('woff'),
+        url('FiraGO-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FiraGO Light';
+    src: url('FiraGO-Light.eot');
+    src: local('FiraGO Light'), local('FiraGO-Light'),
+        url('FiraGO-Light.eot?#iefix') format('embedded-opentype'),
+        url('FiraGO-Light.woff2') format('woff2'),
+        url('FiraGO-Light.woff') format('woff'),
+        url('FiraGO-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FiraGO Medium';
+    src: url('FiraGO-Medium.eot');
+    src: local('FiraGO Medium'), local('FiraGO-Medium'),
+        url('FiraGO-Medium.eot?#iefix') format('embedded-opentype'),
+        url('FiraGO-Medium.woff2') format('woff2'),
+        url('FiraGO-Medium.woff') format('woff'),
+        url('FiraGO-Medium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'FiraGO Bold';
+    src: url('FiraGO-Bold.eot');
+    src: local('FiraGO Bold'), local('FiraGO-Bold'),
+        url('FiraGO-Bold.eot?#iefix') format('embedded-opentype'),
+        url('FiraGO-Bold.woff2') format('woff2'),
+        url('FiraGO-Bold.woff') format('woff'),
+        url('FiraGO-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

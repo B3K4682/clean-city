@@ -1,0 +1,68 @@
+.btn {
+  border: 0;
+  outline: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background-color: transparent;
+  padding: 13px 24px;
+  border-radius: 12px;
+  color: var(--white);
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.btn.btn_primary {
+  background: var(--primary);
+}
+
+.btn.btn_secondary {
+  background: var(--secondary);
+}
+
+.btn.btn_blank {
+  background: transparent;
+  padding: initial;
+  border-radius: initial;
+}
+
+.btn.sm {
+  width: 25%;
+}
+
+.btn.md {
+  width: 50%;
+}
+
+.btn.full {
+  width: 100%;
+}
+
+.navbar_toggler {
+  display: block;
+  padding: 0px;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem !important;
+  -webkit-transition: -webkit-box-shadow 0.15s ease-in-out;
+  transition: -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: box-shadow 0.15s ease-in-out;
+  transition: box-shadow 0.15s ease-in-out;
+  transition: box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  margin-left: 20px;
+}
+
+.navbar_toggler:hover span:not(:nth-child(2)) {
+  width: 15px;
+}
+
+.navbar_toggler:hover {
+  text-decoration: none;
+}
