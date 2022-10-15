@@ -1,0 +1,15 @@
+.banner .banner_wrapper {
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
