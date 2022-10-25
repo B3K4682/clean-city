@@ -1,0 +1,59 @@
+.banner_wrapper {
+  background-position: top !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 80vh;
+  transition: .3s ease-in-out;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text h2 {
+  max-width: 60%;
+  font-family: "FiraGO";
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  font-feature-settings: "case" on;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .text h2 {
+    max-width: 55%;
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 661px) {
+  .banner_wrapper {
+    height: 50vh;
+  }
+}

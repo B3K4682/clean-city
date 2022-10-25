@@ -1,5 +1,5 @@
 import type { GetStaticProps, NextPage } from "next";
-import { Hero, Layout } from "../components";
+import { Hero, Layout, About, Order } from "../components";
 import i18nextConfig from "../../next-i18next.config";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
@@ -9,6 +9,8 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <Hero />
+      <About />
+      <Order />
     </Layout>
   );
 };

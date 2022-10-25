@@ -1,0 +1,38 @@
+.order {
+  padding-bottom: 50px;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  transition: 0.3s ease-in-out;
+}
+
+.order_content {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.order_description h3 {
+  font-family: "FiraGO";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 43px;
+  text-align: center;
+  font-feature-settings: "case" on;
+  color: var(--white);
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,87 @@
+.about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: var(--text-black);
+  text-align: center;
+}
+
+.title {
+  font-family: "FiraGO";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 43px;
+  text-align: center;
+  font-feature-settings: "case" on;
+  color: var(--text-black);
+}
+
+.description {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.text,
+.card h3 {
+  font-family: "FiraGO";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 130%;
+  text-align: center;
+  font-feature-settings: "case" on;
+  color: var(--text-black);
+}
+
+.text, .card_wrapper {
+  margin-top: 64px;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.text {
+  width: 800px;
+}
+
+.card_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 3rem;
+}
+
+.card:not(:last-child) {
+  margin-right: 45px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.card_inner {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 991px) {
+  .cards {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 541px) {
+  .card {
+    margin-right: 0px !important;
+  }
+}

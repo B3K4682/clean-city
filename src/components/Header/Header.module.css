@@ -122,6 +122,10 @@
   margin-right: 30px;
 }
 
+.language_href span {
+  color: var(--text-black);
+}
+
 .ka_flag {
   background-image: url("../../../public/images/languages/ka.svg");
   height: 34px;

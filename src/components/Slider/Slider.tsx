@@ -2,7 +2,7 @@
 import styles from "./Slider.module.css";
 
 // Swiper Imports
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -16,7 +16,7 @@ const Slider: React.FunctionComponent<ISliderProps> = ({ children }) => {
   return (
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={50}
+      spaceBetween={10}
       slidesPerView={1}
       navigation
       pagination={{ clickable: true }}

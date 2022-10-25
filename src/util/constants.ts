@@ -1,25 +1,25 @@
 export const headerLinks = [
   {
     title: "Home",
-    href: "/"
+    href: "/",
   },
   {
     title: "About",
-    href: '/about'
+    href: "/about",
   },
   {
     title: "Services",
-    href: '/services'
+    href: "/services",
   },
   {
     title: "Blog",
-    href: '/blog'
+    href: "/blog",
   },
   {
     title: "Contact",
-    href: '/contact'
-  }
-]
+    href: "/contact",
+  },
+];
 
 export const languages = [
   {
@@ -29,5 +29,20 @@ export const languages = [
   {
     title: "ka",
     flag: "ka_flag",
+  },
+];
+
+export const whyChooseUs = [
+  {
+    title: "უმაღლესი ხარისხი",
+  },
+  {
+    title: "უსაფრთხოება",
+  },
+  {
+    title: "მოხერხებულობა",
+  },
+  {
+    title: "საუკეთესო სერვისები",
   },
 ];

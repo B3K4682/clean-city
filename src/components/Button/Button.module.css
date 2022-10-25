@@ -6,6 +6,7 @@
   transition: 0.3s ease-in-out;
   background-color: transparent;
   padding: 13px 24px;
+  font-size: 18px;
   border-radius: 12px;
   color: var(--white);
   cursor: pointer;
@@ -21,14 +22,27 @@
   background: var(--primary);
 }
 
+.btn.btn_primary:hover{
+  background: var(--primary-hover);
+}
+
 .btn.btn_secondary {
   background: var(--secondary);
 }
 
+.btn.btn_secondary:hover{
+  background: var(--secondary-hover);
+}
+
 .btn.btn_blank {
-  background: transparent;
-  padding: initial;
-  border-radius: initial;
+  background: var(--white);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.btn.btn_blank:hover {
+  background: var(--white);
+  color: var(--primary-hover);
 }
 
 .btn.sm {
@@ -65,4 +79,17 @@
 
 .navbar_toggler:hover {
   text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+  .btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 661px) {
+  .btn {
+    font-size: 14px;
+  }
 }
