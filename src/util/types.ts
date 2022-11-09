@@ -1,3 +1,8 @@
-// Here will be types of pages If needed
-
-export interface DefaultINT {}
+export type IBlog = {
+  id: number;
+  image: string;
+  title: string;
+  shortDesc: string;
+  desc: string;
+  date: string;
+};

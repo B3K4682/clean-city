@@ -2,28 +2,18 @@
 import type { GetStaticProps, NextPage } from "next";
 
 // Component imports
-import {
-  Hero,
-  AboutComp,
-  Order,
-  ServicesComp,
-  HowWeWork,
-  ContactComp,
-} from "../components";
+import { AboutComp, Order } from "../components";
 
 // Translation imports
 import i18nextConfig from "../../next-i18next.config";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-const Home: NextPage = () => {
+const About: NextPage = () => {
   return (
     <>
-      <Hero />
       <AboutComp />
       <Order />
-      <ServicesComp />
-      <HowWeWork />
-      <ContactComp />
+      <div style={{ marginBottom: "192px"}}></div>
     </>
   );
 };
@@ -37,4 +27,4 @@ export const getStaticProps: GetStaticProps = async (props) => ({
   },
 });
 
-export default Home;
+export default About;

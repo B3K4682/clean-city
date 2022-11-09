@@ -31,7 +31,12 @@ const Header: React.FunctionComponent<IHeaderProps> = ({
         <div className={styles.header_wrapper}>
           <Link href="/">
             <div className={styles.logo}>
-              <Image src={"/logo.png"} width={186} height={48} />
+              <Image
+                src={"/logo.png"}
+                width={186}
+                height={48}
+                alt="CleanCity"
+              />
             </div>
           </Link>
           <div className={styles.links}>
@@ -48,7 +53,7 @@ const Header: React.FunctionComponent<IHeaderProps> = ({
               onClick={() => setIsDropdownOpened((prevOpened) => !prevOpened)}
               type="blank"
             >
-              <RiArrowDownSLine size={18} color="#09090B" />
+              <RiArrowDownSLine size={18} fill="#09090B" />
               <i
                 className={`${styles.svg_i} ${styles[`${currentLocale}_flag`]}`}
               ></i>
@@ -57,7 +62,13 @@ const Header: React.FunctionComponent<IHeaderProps> = ({
               <div className={styles.dropdown}>
                 {languages.map((lang) => (
                   <div className={styles.language_item} key={lang.title}>
-                    <Link href={router.pathname} locale={lang.title}>
+                    <Link
+                      href={{
+                        pathname: router.pathname,
+                        query: router.query,
+                      }}
+                      locale={lang.title}
+                    >
                       <p className={styles.language_href}>
                         <i
                           className={`${styles.svg_i} ${styles[lang.flag]} ${

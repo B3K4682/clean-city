@@ -55,6 +55,7 @@
 
 .btn.full {
   width: 100%;
+  justify-content: center;
 }
 
 .navbar_toggler {

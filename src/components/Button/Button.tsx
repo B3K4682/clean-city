@@ -2,7 +2,7 @@ import styles from "./Button.module.css";
 
 interface IButtonProps {
   children: React.ReactNode;
-  onClick: () => void;
+  onClick?: () => void;
   /**
    * Types:
    * - primary

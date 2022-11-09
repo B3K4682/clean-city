@@ -17,7 +17,7 @@ const HeroSlides: React.FunctionComponent<IHeroSlidesProps> = ({
     <div
       className={styles.banner_wrapper}
       style={{
-        background: `linear-gradient(90deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0) 47.92%, rgba(0, 0, 0, 0.72) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('${background}')`,
+        background: `linear-gradient(90deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0) 47.92%, rgba(0, 0, 0, 0.72) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${background})`,
       }}
     >
       <div className={styles.banner_description}>

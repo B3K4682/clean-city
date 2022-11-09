@@ -1,0 +1,104 @@
+.toTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--gray);
+  cursor: pointer;
+}
+
+.toTop .icon {
+  padding: 7px;
+}
+
+.footerContent {
+  background-color: var(--text-black);
+}
+
+.footerWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 32px;
+  padding-bottom: 180px;
+}
+
+.footerInner {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.footerLinks h2 {
+  font-family: "FiraGO";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 37px;
+  font-feature-settings: "case" on;
+}
+
+.footerLinks ul li {
+  font-family: "FiraGO";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--white-light);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 16px;
+}
+
+.footerLinks ul li:hover {
+  color: var(--white);
+}
+
+.footerSocials {
+  display: flex;
+  margin-left: 5%;
+  padding-bottom: 20px;
+}
+
+.footerSocials a:not(:last-child) {
+  margin-right: 21px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background: var(--white);
+  border-radius: 8px;
+  padding: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background: var(--white-light);
+}
+
+@media (max-width: 1199px) {
+  .footer {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footerSocials {
+    width: 100%;
+    justify-content: center;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 511px) {
+  .footerLinks {
+    margin-bottom: 20px;
+  }
+  .footerWrapper {
+    padding-bottom: 80px;
+  }
+}

@@ -10,9 +10,14 @@
   --secondary-hover: #62cf72b7;
   --secondary-hover-light: #62cf724f;
   --white: #fcfcfd;
+  --white-light: #fcfcfdcc;
   --text-black: #09090b;
+  --black-80: #09090bcc;
+  --gray: #09090b66;
+  --light-gray: #09090b99;
   --white-disabled: #fcfcfdbe;
   --text-white: #fcfcfd;
+  --red: #ff0000;
 }
 
 * {
@@ -45,6 +50,16 @@ ul,
 li {
   list-style: none;
   margin-bottom: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 a {
