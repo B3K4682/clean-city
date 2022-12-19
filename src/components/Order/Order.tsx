@@ -1,3 +1,7 @@
+// Next imports
+import Link from "next/link";
+
+// Import styles
 import styles from "./Order.module.css";
 
 // Images import
@@ -30,8 +34,8 @@ const Order: React.FunctionComponent<IOrderProps> = (props) => {
             <h3>{t("order_cleaning")}</h3>
           </div>
           <div className={styles.action}>
-            <Button type="blank" onClick={() => {}}>
-              {t("order_now")}
+            <Button type="blank">
+              <Link href={"/contact"}>{t("order_now")}</Link>
             </Button>
           </div>
         </div>

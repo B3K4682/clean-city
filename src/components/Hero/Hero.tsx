@@ -8,15 +8,17 @@ import { Slider } from "..";
 // Import components
 import HeroSlides from "./HeroSlides/HeroSlides";
 
-// Import constants
-import { heroSlides } from "../../util/constants";
+// Import types
+import type { HeroSlidesType } from "../../util/types";
 
 // Import translation
 import { useTranslation } from "next-i18next";
 
-interface IHeroProps {}
+interface IHeroProps {
+  heroSlides: HeroSlidesType[];
+}
 
-const Hero: React.FunctionComponent<IHeroProps> = (props) => {
+const Hero: React.FunctionComponent<IHeroProps> = ({ heroSlides }) => {
   const { t, i18n } = useTranslation();
   const currentLanguage = i18n.language;
 
@@ -24,12 +26,16 @@ const Hero: React.FunctionComponent<IHeroProps> = (props) => {
     <div className={styles.hero}>
       <div className={styles.banner}>
         <Slider>
-          {heroSlides.map((slide, i) => (
-            <SwiperSlide key={i}>
+          {heroSlides.map((slide) => (
+            <SwiperSlide key={slide.id}>
               <HeroSlides
-                background={slide.background}
-                title={currentLanguage === "en" ? slide.titleEn : slide.titleKa}
-                buttonText={currentLanguage === "en" ? slide.buttonEn : slide.buttonKa}
+                background={slide.image}
+                title={currentLanguage === "en" ? slide.titleEn : slide.title}
+                buttonText={
+                  currentLanguage === "en"
+                    ? slide.buttonTextEn
+                    : slide.buttonText
+                }
               />
             </SwiperSlide>
           ))}

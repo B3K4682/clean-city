@@ -111,28 +111,150 @@ export const howWeWork = [
 
 export const services = [
   {
+    id: 0,
     title: "სახლის სტანდარტული დასუფთავება",
     titleEn: "Standard house cleaning",
     image: "01.png",
     link: "/services/standart",
+    slug: "standart",
+    description: `
+      <h1>HTML Ipsum Presents</h1>
+
+				<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+
+				<h2>Header Level 2</h2>
+
+				<ol>
+				   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+				   <li>Aliquam tincidunt mauris eu risus.</li>
+				</ol>
+
+				<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
+
+				<h3>Header Level 3</h3>
+
+				<ul>
+				   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+				   <li>Aliquam tincidunt mauris eu risus.</li>
+				</ul>
+
+				<pre><code>
+				#header h1 a {
+				  display: block;
+				  width: 300px;
+				  height: 80px;
+				}
+				</code></pre>
+    `,
   },
   {
+    id: 1,
     title: "სახლის სპეციალური დასუფთავება",
     titleEn: "Special house cleaning",
     image: "02.png",
     link: "/services/special",
+    slug: "special",
+    description: `
+      <h1>HTML Ipsum Presents</h1>
+
+				<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+
+				<h2>Header Level 2</h2>
+
+				<ol>
+				   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+				   <li>Aliquam tincidunt mauris eu risus.</li>
+				</ol>
+
+				<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
+
+				<h3>Header Level 3</h3>
+
+				<ul>
+				   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+				   <li>Aliquam tincidunt mauris eu risus.</li>
+				</ul>
+
+				<pre><code>
+				#header h1 a {
+				  display: block;
+				  width: 300px;
+				  height: 80px;
+				}
+				</code></pre>`,
   },
   {
+    id: 2,
     title: "სახლის სტანდარტული დასუფთავება",
     titleEn: "Standard house cleaning",
     image: "03.png",
-    link: "/services/standart",
+    link: "/services/standart-second",
+    slug: "standart-second",
+    description: `
+      <h1>HTML Ipsum Presents</h1>
+
+				<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+
+				<h2>Header Level 2</h2>
+
+				<ol>
+				   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+				   <li>Aliquam tincidunt mauris eu risus.</li>
+				</ol>
+
+				<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
+
+				<h3>Header Level 3</h3>
+
+				<ul>
+				   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+				   <li>Aliquam tincidunt mauris eu risus.</li>
+				</ul>
+
+				<pre><code>
+				#header h1 a {
+				  display: block;
+				  width: 300px;
+				  height: 80px;
+				}
+				</code></pre>
+        `,
   },
   {
+    id: 3,
     title: "სახლის სპეციალური დასუფთავება",
     titleEn: "Special house cleaning",
     image: "04.png",
-    link: "/services/special",
+    link: "/services/special-second",
+    slug: "special-second",
+    description: `
+    <h1>HTML Ipsum Presents</h1>
+
+				<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+
+				<h2>Header Level 2</h2>
+
+				<ol>
+				   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+				   <li>Aliquam tincidunt mauris eu risus.</li>
+				</ol>
+
+				<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
+
+				<h3>Header Level 3</h3>
+
+				<ul>
+				   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+				   <li>Aliquam tincidunt mauris eu risus.</li>
+				</ul>
+
+				<pre><code>
+				#header h1 a {
+				  display: block;
+				  width: 300px;
+				  height: 80px;
+				}
+				</code></pre>`,
   },
 ];
 
@@ -178,23 +300,6 @@ export const footerSocials = [
     title: "Telegram",
     href: "https://t.me/995511260222",
     icon: TelegramIcon,
-  },
-];
-
-export const heroSlides = [
-  {
-    background: "/images/testBanner.jpeg",
-    titleEn: "Order cleaning services online on our website",
-    titleKa: "შეუკვეთეთ დასუფთავების მომსახურება ჩვენს ვებ-გვერდზე ონლაინ",
-    buttonEn: "Apply online",
-    buttonKa: "მიმართეთ ონლაინ",
-  },
-  {
-    background: "/images/testBanner.jpeg",
-    titleEn: "Order cleaning services online on our website",
-    titleKa: "შეუკვეთეთ დასუფთავების მომსახურება ჩვენს ვებ-გვერდზე ონლაინ",
-    buttonEn: "Apply online",
-    buttonKa: "მიმართეთ ონლაინ",
   },
 ];
 

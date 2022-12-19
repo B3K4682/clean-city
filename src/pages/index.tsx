@@ -15,11 +15,22 @@ import {
 import i18nextConfig from "../../next-i18next.config";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-const Home: NextPage = () => {
+// Import types
+import type { HeroSlidesType } from "../util/types";
+
+interface IHomeProps {
+  heroSlides: HeroSlidesType[];
+  aboutData: {
+    aboutKa: string;
+    aboutEn: string;
+  };
+}
+
+const Home: NextPage<IHomeProps> = ({ heroSlides, aboutData }) => {
   return (
     <>
-      <Hero />
-      <AboutComp />
+      <Hero heroSlides={heroSlides} />
+      <AboutComp aboutData={aboutData} />
       <Order />
       <ServicesComp />
       <HowWeWork />
@@ -28,13 +39,22 @@ const Home: NextPage = () => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async (props) => ({
-  props: {
-    ...(await serverSideTranslations(
-      props.locale ?? i18nextConfig.i18n.defaultLocale,
-      ["common"]
-    )),
-  },
-});
+export const getStaticProps: GetStaticProps = async (props) => {
+  const banners = await fetch(`${process.env.NEXT_PUBLIC_API_URI}/api/banners`);
+  const heroSlides = await banners.json();
+  const about = await fetch(`${process.env.NEXT_PUBLIC_API_URI}/api/about`);
+  const aboutData = await about.json();
+
+  return {
+    props: {
+      heroSlides,
+      aboutData,
+      ...(await serverSideTranslations(
+        props.locale ?? i18nextConfig.i18n.defaultLocale,
+        ["common"]
+      )),
+    },
+  };
+};
 
 export default Home;

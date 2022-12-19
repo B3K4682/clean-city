@@ -19,6 +19,7 @@ import HowWeWork from "./HowWeWork/HowWeWork";
 import Contact from "./Contact/Contact";
 import Blog from "./Blog/Blog";
 import BlogPost from "./Blog/BlogPost/BlogPost";
+import Service from "./Services/Service/Service";
 
 /**
  * EXPORT ALL
@@ -39,4 +40,5 @@ export {
   Contact as ContactComp,
   Blog as BlogComp,
   BlogPost,
+  Service as ServiceSingle,
 };

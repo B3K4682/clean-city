@@ -22,7 +22,7 @@
   background: var(--primary);
 }
 
-.btn.btn_primary:hover{
+.btn.btn_primary:hover {
   background: var(--primary-hover);
 }
 
@@ -30,17 +30,19 @@
   background: var(--secondary);
 }
 
-.btn.btn_secondary:hover{
+.btn.btn_secondary:hover {
   background: var(--secondary-hover);
 }
 
-.btn.btn_blank {
+.btn.btn_blank,
+.btn.btn_blank a {
   background: var(--white);
   color: var(--primary);
   font-weight: 600;
 }
 
-.btn.btn_blank:hover {
+.btn.btn_blank:hover,
+.btn.btn_blank:hover a {
   background: var(--white);
   color: var(--primary-hover);
 }
@@ -81,7 +83,6 @@
 .navbar_toggler:hover {
   text-decoration: none;
 }
-
 
 @media (max-width: 768px) {
   .btn {

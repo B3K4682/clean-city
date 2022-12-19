@@ -1,6 +1,11 @@
+// Next imports
+import Link from "next/link";
+
 // Import styles
-import { Container, Button } from "../../";
 import styles from "./HeroSlides.module.css";
+
+// Import components
+import { Container, Button } from "../../";
 
 interface IHeroSlidesProps {
   title: string;
@@ -26,8 +31,8 @@ const HeroSlides: React.FunctionComponent<IHeroSlidesProps> = ({
             <h2>{title}</h2>
           </div>
           <div className={styles.action}>
-            <Button type="primary" onClick={() => {}}>
-              {buttonText}
+            <Button type="primary">
+              <Link href={"/contact"}>{buttonText}</Link>
             </Button>
           </div>
         </Container>

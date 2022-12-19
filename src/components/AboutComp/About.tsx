@@ -4,15 +4,20 @@ import styles from "./About.module.css";
 import { Container } from "..";
 
 // Import constants
-import { whyChooseUs, aboutUs } from "../../util/constants";
+import { whyChooseUs } from "../../util/constants";
 import Image from "next/image";
 
 // Import translation
 import { useTranslation } from "next-i18next";
 
-interface IAboutProps {}
+interface IAboutProps {
+  aboutData: {
+    aboutKa: string;
+    aboutEn: string;
+  };
+}
 
-const AboutComp: React.FunctionComponent<IAboutProps> = (props) => {
+const AboutComp: React.FunctionComponent<IAboutProps> = ({ aboutData }) => {
   const { t, i18n } = useTranslation();
   const currentLanguage = i18n.language;
 
@@ -22,7 +27,7 @@ const AboutComp: React.FunctionComponent<IAboutProps> = (props) => {
       <Container>
         <div className={styles.description}>
           <div className={styles.text}>
-            {currentLanguage === "en" ? aboutUs.aboutEn : aboutUs.aboutKa}
+            {currentLanguage === "en" ? aboutData.aboutEn : aboutData.aboutKa}
           </div>
         </div>
       </Container>

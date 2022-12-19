@@ -61,7 +61,7 @@ const ServicesComp: React.FunctionComponent<IServicesProps> = (props) => {
       </Container>
       <div className={styles.link}>
         <Button type="primary">
-          <Link href={"/"}>{t("order_now")}</Link>
+          <Link href={"/contact"}>{t("order_now")}</Link>
         </Button>
       </div>
     </div>
