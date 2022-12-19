@@ -71,6 +71,17 @@ export const languages = [
   },
 ];
 
+export const heroSlides = [
+  {
+    id: 0,
+    title: "შეუკვეთეთ დასუფთავების მომსახურება ჩვენს ვებ-გვერდზე ონლაინ",
+    titleEn: "Order cleaning services online on our website",
+    image: "/images/testBanner.jpeg",
+    buttonText: "მიმართეთ ონლაინ",
+    buttonTextEn: "Order Online",
+  },
+];
+
 export const whyChooseUs = [
   {
     title: "უმაღლესი ხარისხი",

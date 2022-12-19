@@ -8,17 +8,15 @@ import { AboutComp, Order } from "../components";
 import i18nextConfig from "../../next-i18next.config";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-interface IAboutProps {
-  aboutData: {
-    aboutKa: string;
-    aboutEn: string;
-  };
-}
+// Import constants
+import { aboutUs } from "../util/constants";
 
-const About: NextPage<IAboutProps> = ({ aboutData }) => {
+interface IAboutProps {}
+
+const About: NextPage<IAboutProps> = () => {
   return (
     <>
-      <AboutComp aboutData={aboutData} />
+      <AboutComp aboutData={aboutUs} />
       <Order />
       <div style={{ marginBottom: "192px" }}></div>
     </>
@@ -26,12 +24,8 @@ const About: NextPage<IAboutProps> = ({ aboutData }) => {
 };
 
 export const getStaticProps: GetStaticProps = async (props) => {
-  const about = await fetch(`${process.env.NEXT_PUBLIC_API_URI}/api/about`);
-  const aboutData = await about.json();
-  
   return {
     props: {
-      aboutData,
       ...(await serverSideTranslations(
         props.locale ?? i18nextConfig.i18n.defaultLocale,
         ["common"]
